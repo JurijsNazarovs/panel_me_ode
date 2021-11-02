@@ -23,3 +23,10 @@ To run the `main.py` file, you need to download [data generator repository](http
 * put it in the same directory as ME-NODE repository.
 
 Note: the access to the data genration repository is handled in [lib/parse_datasets.py](lib/parse_datasets.py) with `sys.path.append`.
+
+# Visualization of experiments
+## Rotating MNIST
+![](images/rotmnist.gif "Results of generating rotating MNIST in next time steps for different steps of calibration" )
+
+## TADPOLE
+![](images/tadpole.gif "Results of generating brain scans in next time steps" )
