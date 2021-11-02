@@ -26,7 +26,7 @@ Note: the access to the data genration repository is handled in [lib/parse_datas
 
 # Visualization of experiments
 ## Rotating MNIST
-![](images/rotmnist.gif "Results of generating rotating MNIST in next time steps for different steps of calibration" )
+![Results of generating rotating MNIST in next time steps for different steps of calibration](images/rotmnist.gif)
 
 ## TADPOLE
-![](images/tadpole.gif "Results of generating brain scans in next time steps" )
+![Results of generating brain scans in next time steps](images/tadpole.gif)
