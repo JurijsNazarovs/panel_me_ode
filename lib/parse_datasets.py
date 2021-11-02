@@ -9,7 +9,7 @@ import lib.utils as utils
 from torch.utils.data import DataLoader
 
 import sys
-sys.path.append("/home/nazarovs/projects/")
+sys.path.append("../")
 
 from data_generators.me_ode_1d import MEODE1d
 from data_generators.mujoco_physics import HopperPhysics
@@ -135,7 +135,7 @@ def parse_datasets(args, device):
             "data_gen": train_gen,
             "train_dataloader": utils.inf_generator(train_dataloader),
             "test_dataloader": utils.inf_generator(test_dataloader),
-            "input_dim": 1,  #batch, time, dim/channel, ...
+            "input_dim": 1,  # batch, time, dim/channel, ...
             "n_train_batches": train_gen.n_train_batches,
             "n_test_batches": train_gen.n_test_batches,
         }
@@ -158,7 +158,7 @@ def parse_datasets(args, device):
                 batch, time_steps, data_type="train"))
         test_dataloader = DataLoader(
             test_y,
-            batch_size=batch_size,  #args.n_samples,
+            batch_size=batch_size,  # args.n_samples,
             shuffle=False,
             collate_fn=lambda batch: basic_collate_fn(
                 batch, time_steps, data_type="test"))
@@ -167,7 +167,7 @@ def parse_datasets(args, device):
             "data_gen": data_gen,
             "train_dataloader": utils.inf_generator(train_dataloader),
             "test_dataloader": utils.inf_generator(test_dataloader),
-            "input_dim": dataset.shape[2],  #batch, time, dim/channel, ...
+            "input_dim": dataset.shape[2],  # batch, time, dim/channel, ...
             "n_train_batches": len(train_dataloader),
             "n_test_batches": len(test_dataloader)
         }

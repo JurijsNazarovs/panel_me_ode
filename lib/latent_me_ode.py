@@ -110,8 +110,6 @@ class LatentMEODE(VAE_Baseline):
             z0_mu, z0_rho = self.encoder_z0(truth_w_mask,
                                             truth_time_steps,
                                             run_backwards=run_backwards)
-            import pdb
-            pdb.set_trace()
 
             z0_std = torch.nn.functional.softplus(z0_rho) + 1e-8
 

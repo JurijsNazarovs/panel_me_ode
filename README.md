@@ -1,4 +1,4 @@
-Official repository of the paper ["A Variational Approximation for Analyzing the Dynamics of Panel Data"](paper.pdf), Mixed Effect Neural ODE, UAI 2021.
+Official repository of the paper (UAI 2021) ["A Variational Approximation for Analyzing the Dynamics of Panel Data"](paper.pdf), Mixed Effect Neural ODE.
 
 Panel data involving longitudinal measurements of the same set of participants taken over multiple time points is common in studies to understand childhood development and disease modeling. 
 We propose a probabilistic model called ME-NODE to incorporate (fixed + random) mixed effects for analyzing the dynamics of panel data.
@@ -17,3 +17,8 @@ volume={2021},
 year={2021}
 }
 ```
+
+To run the `main.py` file, you need to download [data generation repository](https://github.com/JurijsNazarovs/data_generators), and either
+* keep it in separate directory up-level from the ME-NODE repository or
+* put it in the same directory as ME-NODE repository.
+Note: the access to the data genration repository is handled in [lib/parse_datasets.py](lib/parse_datasets.py) with `sys.path.append`.

@@ -1,5 +1,6 @@
 import argparse
 
+
 def get_arguments():
     parser = argparse.ArgumentParser('Panel-ME ODE')
     parser.add_argument('--save',
@@ -40,11 +41,12 @@ def get_arguments():
                         default='meode',
                         choices=['meode', 'ode'],
                         help="Temporal model")
-    parser.add_argument('--z0_encoder',
-                        type=str,
-                        default='odernn',
-                        choices=['odernn', 'rnn'],
-                        help="Type of encoder to get z0 (initial point of ODE)")
+    parser.add_argument(
+        '--z0_encoder',
+        type=str,
+        default='odernn',
+        choices=['odernn', 'rnn'],
+        help="Type of encoder to get z0 (initial point of ODE)")
     parser.add_argument('--latents',
                         type=int,
                         default=13,
@@ -80,7 +82,7 @@ def get_arguments():
                         default=100,
                         help="Number of units per layer in ODE func for both: "
                         "recognition of z0 and generation of zt.")
-    
+
     # Mixed Effect related
     parser.add_argument('--me_dim',
                         type=int,
@@ -94,10 +96,9 @@ def get_arguments():
                         type=int,
                         default=2,
                         help="Number of sampled w per z0")
-    
-    
+
     ## [Data] related
-     parser.add_argument(
+    parser.add_argument(
         '--dataset',
         type=str,
         default='toy',
@@ -182,4 +183,4 @@ def get_arguments():
         "(in number of points). "
         "Used for periodic function demo.")
 
-    return parser  
+    return parser
