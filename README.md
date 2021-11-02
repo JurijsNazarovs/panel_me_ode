@@ -18,7 +18,8 @@ year={2021}
 }
 ```
 
-To run the `main.py` file, you need to download [data generation repository](https://github.com/JurijsNazarovs/data_generators), and either
-* keep it in separate directory up-level from the ME-NODE repository or
+To run the `main.py` file, you need to download [data generator repository](https://github.com/JurijsNazarovs/data_generators), and either
+* keep it in a separate directory up-level from the ME-NODE repository or
 * put it in the same directory as ME-NODE repository.
+
 Note: the access to the data genration repository is handled in [lib/parse_datasets.py](lib/parse_datasets.py) with `sys.path.append`.
