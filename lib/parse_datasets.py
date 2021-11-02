@@ -17,14 +17,7 @@ from data_generators.rotating_mnist import RotatingMnist
 from data_generators.adni import Adni
 from data_generators.tadpole import Tadpole
 
-#from physionet import PhysioNet, variable_time_collate_fn, get_data_min_max
-#from person_activity import PersonActivity, variable_time_collate_fn_activity
 
-from sklearn import model_selection
-import random
-
-
-################################################################################
 def parse_datasets(args, device):
     def basic_collate_fn(batch,
                          time_steps,
