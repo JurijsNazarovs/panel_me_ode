@@ -9,7 +9,7 @@ import lib.utils as utils
 from torch.utils.data import DataLoader
 
 import sys
-sys.path.append("../")
+sys.path.append("../")  # to access data_generators
 
 from data_generators.me_ode_1d import MEODE1d
 from data_generators.mujoco_physics import HopperPhysics
