@@ -10,11 +10,12 @@ If you like our work, please give us a star. If you use our code in your researc
 please cite our paper as
 ```
 @inproceedings{nazarovs2021variational,
-title={A Variational Approximation for Analyzing the Dynamics of Panel Data},
-author={Nazarovs, Jurijs and Chakraborty, Rudrasis and Tasneeyapant, Songwong and Ravi, Sathya N and Singh, Vikas},
-booktitle={Uncertainty in artificial intelligence: proceedings of the... conference. Conference on Uncertainty in Artificial Intelligence},
-volume={2021},
-year={2021}
+  title={A variational approximation for analyzing the dynamics of panel data},
+  author={Nazarovs, Jurijs and Chakraborty, Rudrasis and Tasneeyapant, Songwong and Ravi, Sathya and Singh, Vikas},
+  booktitle={Uncertainty in Artificial Intelligence},
+  pages={107--117},
+  year={2021},
+  organization={PMLR}
 }
 ```
 
